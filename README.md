@@ -3,7 +3,7 @@ This module attempts to enhance contrast of a given image by employing a method 
 
 You can access the article that came up with this method [here](https://www.researchgate.net/publication/272424815_Histogram-Based_Locality-Preserving_Contrast_Enhancement).  
 
-Through formulating their approach, a minimization problem is introduced and solved using cvxpy solver library in python.
+Through formulating their approach, a minimization problem is introduced and solved using cvxpy library in python.
 
 ## Installation
 
