@@ -24,7 +24,7 @@ def imhblpce(image):
     # Q is the H in the quadprog equation : minimum( 0.5 * y'*H*y )
     Q = P * W
     
-    def solve_quadratic_problem(Q):
+    def solve_quadratic_problem(Q, N):
         # 1/2 y.T Q y
         # Gx ≤ h, Ax = b
         N = Q.shape[0] + 1
@@ -41,7 +41,7 @@ def imhblpce(image):
 
         prob.solve()
         return np.array(y.value)
-    y = solve_quadratic_problem(Q)
+    y = solve_quadratic_problem(Q, N)
     
     # x = D\y
     # D = np.diag(np.ones((N-1))) + np.diag(-np.ones((N-2)),k=-1)
