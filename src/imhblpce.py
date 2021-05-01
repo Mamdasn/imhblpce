@@ -1,13 +1,7 @@
 import numpy as np
 import cvxpy as cp
 import numba 
-
-
-def imhist(image):
-    hist, _ = np.histogram(image.copy().reshape(1, -1), bins=256, range=(0, 255))
-    return hist
-
-
+from imhist import imhist
 
 def imhblpce(image):
     [h, w] = image.shape
