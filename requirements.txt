@@ -1,3 +1,4 @@
 cvxpy==1.1.12
 numba==0.53.1
 numpy==1.20.1
+imhist==0.0.3
