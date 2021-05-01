@@ -10,7 +10,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 
 setup(
     name='imhblpce',
-    version='0.0.4',
+    version='0.0.5',
     author="mamdasn s",
     author_email="<mamdassn@gmail.com>",
     url="https://github.com/Mamdasn/imhblpce",
@@ -24,6 +24,7 @@ setup(
         "numpy", 
         "cvxpy",
         "numba",
+        "imhist",
         ],
     keywords=['python', 'histogram', 'imhblpce', 'hblpce', 'histogram equalization', 'histogram based equalization', 'histogram locality preserving', 'contrast enhancement'],
     classifiers=[
