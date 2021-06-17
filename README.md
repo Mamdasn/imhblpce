@@ -46,7 +46,11 @@ def main():
     cv2.waitKey(0)
     
 if __name__ == '__main__': main()
-```
+```  
+Or  
+```Bash
+imhblpce --input 'Countryside.jpg' --output 'Countryside-imhblpce.jpg'
+```  
 
 ## Showcase
 This is a sample image
