@@ -2,7 +2,7 @@
 [![Package Status](https://img.shields.io/pypi/status/imhblpce.svg)](https://pypi.org/project/imhblpce/)
 [![Downloads](https://pepy.tech/badge/imhblpce)](https://pepy.tech/project/imhblpce)
 [![License](https://img.shields.io/pypi/l/imhblpce.svg)](https://github.com/Mamdasn/imhblpce/blob/main/LICENSE)
-![Repository Size](https://img.shields.io/github/languages/code-size/mamdasn/imhblpce)
+![Repository Size](https://img.shields.io/github/repo-size/mamdasn/imhblpce)
 
 
 # imhblpce
