@@ -1,3 +1,10 @@
+[![PyPI Latest Release](https://img.shields.io/pypi/v/imhblpce.svg)](https://pypi.org/project/imhblpce/)
+[![Package Status](https://img.shields.io/pypi/status/imhblpce.svg)](https://pypi.org/project/imhblpce/)
+[![Downloads](https://pepy.tech/badge/imhblpce)](https://pepy.tech/project/imhblpce)
+[![License](https://img.shields.io/pypi/l/imhblpce.svg)](https://github.com/Mamdasn/imhblpce/blob/main/LICENSE)
+![Repository Size](https://img.shields.io/github/repo-size/mamdasn/imhblpce)
+
+
 # imhblpce
 This module attempts to enhance contrast of a given image by employing a method called HBLPCE [Histogram-Based Locality-Preserving Contrast Enhancement]. This method enhances contrast of an image through equalizing its histogram, while keeping an eye on histogram's general shape, to conserve overall brightness and prevent excessive enhancement of the image.  
 
