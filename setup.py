@@ -2,38 +2,46 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-here = os.path.abspath(os.path.dirname(__file__))
+parent_dir = os.path.abspath(os.path.dirname(__file__))
 
-with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
-    long_description = "\n" + fh.read()
+with codecs.open(os.path.join(parent_dir, "README.md"), encoding="utf-8") as readme:
+    readme_description = "\n" + readme.read()
 
 
 setup(
-    name='imhblpce',
-    version='0.0.6',
+    name="imhblpce",
+    version="1.0.0",
     author="mamdasn s",
     author_email="<mamdassn@gmail.com>",
     url="https://github.com/Mamdasn/imhblpce",
-    description='This module attempts to enhance contrast of a given image by employing a method called HBLPCE.',
-    long_description=long_description,
-    long_description_content_type = "text/markdown",
+    description="This module attempts to enhance contrast of a given image by employing a method called HBLPCE.",
+    long_description=readme_description,
+    long_description_content_type="text/markdown",
     include_package_data=True,
-    package_dir={'': 'src'},
+    package_dir={"": "src"},
     py_modules=["imhblpce"],
     install_requires=[
-        "numpy", 
+        "numpy",
         "cvxpy",
         "numba",
         "imhist",
-        ],
-    keywords=['python', 'histogram', 'imhblpce', 'hblpce', 'histogram equalization', 'histogram based equalization', 'histogram locality preserving', 'contrast enhancement'],
+    ],
+    keywords=[
+        "python",
+        "histogram",
+        "imhblpce",
+        "hblpce",
+        "histogram equalization",
+        "histogram based equalization",
+        "histogram locality preserving",
+        "contrast enhancement",
+    ],
     classifiers=[
-        "Development Status :: 1 - Planning",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Science/Research",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Programming Language :: Python :: 3.8",
         "Operating System :: OS Independent",
     ],
-    scripts=['bin/imhblpce'],
-
+    scripts=["bin/imhblpce"],
 )
